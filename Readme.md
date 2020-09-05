@@ -4,8 +4,8 @@ THIS IS SUBMITTED BY SAGAR GARG
 mobile - 9711181457
 I have used HTML CSS JQUERY for frontend , no outside frontend framework. For Backend I have used Nodejs , express js and MySQL database. Name of the DATABASE I have used is starwisp and all the spellings are matched as per given in the images.
 
-STEP 1: npm install - to install all the node modules
-STEP 2: npm start - this will start the application which will then be available on Localhost: 3000;
+ALL the packages are also uplaoded on github (though i suggest to use npm install before start)
+npm start - this will start the application which will then be available on Localhost: 3000;
 
 the app contains the functionality of login and logout, for this I have used passport.js and passport local strategy
 5 users were added in the database using insert query and around 10-12 rows were present for the uni-detals. I have created different routes and controllers for each 
