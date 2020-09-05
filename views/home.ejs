@@ -1,0 +1,86 @@
+<link rel="stylesheet" href="/css/homepage.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<div>
+   
+   <header>
+      <div class="left_side_btns">
+         <a class="add-btn"><button type="button"> ADD </button></a>
+
+         <a class="view-btn"><button type="button"> VIEW   </button></a>
+      </div>
+      <a class="logout-btn" href="/users/logout"><button> LOGOUT </button></a>
+   </header>
+
+
+   <!-- Form Submission Modal -->
+<div id="id01" class="modal">
+     <div class="container animate">
+        <h3>Confirm Form Submission</h3>
+      <p>Are you sure you want to submit the form</p>
+      <div class="clearfix">
+         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+         <button type="submit" class="submitbtn" form="form1">Submit</button>
+       </div>
+     </div>
+ </div>
+
+ <!-- SUBMISSION CONFIRMSTION MODAL -->
+ <div id="id02" class="modal" style="z-index: 100;">
+   <div class="container animate success" >
+      <h3>FORM SUBMITTED SUCCESFULLY</h3>
+      <p>Sucessfully Stored In Database</p>
+    <p></p>
+   </div>
+</div>
+
+<!-- SUBMISSION ERROR MODAL -->
+<div id="id03" class="modal" style="z-index: 100;">
+   <div class="container animate failure" >
+      <h3>FORM CANNOT BE SUBMITTED</h3>
+      <p>University Name Already Present In Database</p>
+    <p></p>
+   </div>
+</div>
+
+<!-- TABLE ROW DELETION MODAL -->
+<div id="id04" class="modal">
+   <div class="container animate">
+      <h3>Confirm Deletion</h3>
+    <p>Are you sure you want to delete the university from list</p>
+    <div class="clearfix">
+       <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
+       <button type="button" class="deletebtn" data-id="">Delete</button>
+     </div>
+   </div>
+</div>
+
+<!-- SIGNED IN USER -->
+   <div class="signed_in_user">
+      Hello, <%= locals.user %>
+   </div>
+
+   <!-- BOX CONTAINER -->
+   <div class="home_conatiner">
+      <div class="uni_details_area">
+
+         <form id="form1" action="" method="POST">
+
+            <div class="uni_details_form_area">
+
+               <!-- FORM PARTIALS -->
+               <%- include('form') -%>
+
+               <!-- TABLE PARTIALS -->
+               <%- include('tables') -%>
+
+            </div>
+         </form>
+
+         <input class="submit-btn" type="submit" value="SUBMIT" form="form1" data-action="/users/store_data">
+      </div>
+   </div>
+
+</div>
+
+<script src="/js/home.js"></script>

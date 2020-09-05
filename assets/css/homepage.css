@@ -1,0 +1,307 @@
+body{
+   overflow: hidden;
+}
+/* --------------------header styling after LOGIN ------------------------ */
+header{
+   width: 100%;
+   height: 55px;
+   background-color: rgb(13, 126, 192);
+   position: relative;
+}
+
+button:focus{
+   outline: none;
+}
+
+.logout-btn{
+   position: absolute;
+   right: 7px;
+   top: 7px;
+}
+
+.left_side_btns{
+   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65%;
+  width: 20%;
+}
+
+.add-btn button, .view-btn button{
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.view-btn{
+   margin-left: 15px;
+}
+
+button{
+   padding: 10px;
+   background: transparent;
+   border: 2px solid white;
+   color: white;
+   font-weight: bold;
+   border-radius: 5px;
+}
+
+button:hover{
+   cursor: pointer;
+   background: white;
+   color: rgb(13, 126, 192);
+   transition: linear 0.3s;
+}
+
+/* ----------------signed In User --------------- */
+.signed_in_user{
+   padding: 20px;
+   position: absolute;
+   right: 10px;
+   text-transform: capitalize;
+   font-family: sans-serif;
+   font-size: large;
+   font-weight: bold;
+}
+
+.home_conatiner{
+   margin-top: 20px;
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* -------------------uni details Container box --------------------- */
+
+.uni_details_form_area{
+   border: 1px solid black;
+   height: 60vh;
+   width: 80vw;
+   padding: 10px;
+   overflow-y: scroll;
+}
+
+.uni_details_form_area::-webkit-scrollbar {
+   display: none;
+}
+
+.submit-btn{
+   background-color: #44C4E7;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   margin-left: 20%;
+   border: none;
+   cursor: pointer;
+   width: 60%;
+}
+
+/* --------------------Table styling------------------------------ */
+.users {
+   display: none;
+   table-layout: fixed;
+   width: 100%;
+}
+ 
+ /* Column widths are based on these cells */
+ .row-ID {
+   width: 5%;
+ }
+ .row-date {
+   width: 10%;
+ }
+ .row-url{
+    width: 15%;
+ }
+ .row-student{
+    width: 9%;
+ }
+ .row-number{
+    width: 12%;
+ }
+ .row-email {
+   width: 20%;
+ }
+ .row-icon{
+    width: 5%;
+ }
+ .users td {
+      word-break: break-all;
+    font-family: sans-serif;
+    font-size: smaller;
+    height: 86px;
+ }
+ .users th {
+   background: darkblue;
+   color: white;
+   text-transform: capitalize;
+   font-family: sans-serif;
+ }
+ .users td,
+ .users th {
+   text-align: left;
+   padding: 5px 10px;
+ }
+ .users tr:nth-child(even) {
+   background: lightblue;
+ }
+
+ .edit_icon, .delete_icon{
+    text-align: center !important;
+ }
+
+i:hover{
+    cursor: pointer;
+}
+
+ .delete_icon:hover{
+    color: red;
+ }
+
+ #traversal_buttons{
+    display: none;
+    position: absolute;
+    bottom: 25px;
+}
+
+#traversal_buttons i {
+   font-size: x-large;
+   padding: 20px;
+}
+ 
+/* ----------------------- form styling ---------------------- */
+.input-container {
+   display: -ms-flexbox; /* IE10 */
+   display: flex;
+   width: 100%;
+   margin-bottom: 15px;
+ }
+ 
+ .icon {
+   padding: 10px;
+   background: dodgerblue;
+   color: white;
+   min-width: 50px;
+   text-align: center;
+ }
+ 
+ .input-field {
+   width: 100%;
+   padding: 10px;
+   outline: none;
+ }
+ 
+ .input-field:focus {
+   border: 2px solid dodgerblue;
+ }
+
+.submit-btn:focus{
+    border: none;
+    outline: none;
+}
+
+.container {
+   padding: 20px;
+   padding-top:25px;
+   text-align: center;
+   background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 45%;
+    height: 25%;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 4px 44px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 4px 4px 44px -8px rgba(0,0,0,1);
+    box-shadow: 4px 4px 44px -8px rgba(0,0,0,1)
+ }
+ 
+ /* -----------------------different Popups styling ----------------- */
+/* The Modal (background) */
+.modal {
+   display: none; 
+   position: fixed; 
+   width: 100%;
+   height: 100%;
+   overflow: hidden; 
+   padding-top: 50px;
+   font-family: sans-serif;
+ }
+ 
+ .modal-content {
+   background-color: #fefefe;
+   margin: 5% auto 15% auto; 
+   border: 1px solid #888;
+   width: 80%;
+ }
+ 
+ hr {
+   border: 1px solid #f1f1f1;
+   margin-bottom: 25px;
+ }
+ 
+ .clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+
+ button:hover {
+   opacity:1;
+ }
+ 
+ .cancelbtn, .submitbtn {
+   float: left;
+   width: 50%;
+ }
+ 
+ .cancelbtn {
+   background-color: #ccc;
+   color: black;
+ }
+ 
+ .submitbtn {
+   background-color: dodgerblue;
+ }
+
+ .deletebtn{
+    background: rgb(250, 53, 53);
+    width: 50%;
+ }
+
+ .deletebtn:hover{
+    color: red !important;
+ }
+ 
+ .animate {
+   -webkit-animation: animatezoom 0.4s;
+   animation: animatezoom 0.4s
+ }
+ 
+ @-webkit-keyframes animatezoom {
+   from {-webkit-transform: scale(0)} 
+   to {-webkit-transform: scale(1)}
+ }
+   
+ @keyframes animatezoom {
+   from {transform: scale(0)} 
+   to {transform: scale(1)}
+ }
+ 
+
+ /* form Submission Sucessfull Modal */
+ .success{
+    font-family: sans-serif;
+    color: white;
+    background: rgb(10, 202, 10);
+    height: 15%;
+    width: 40%;
+ }
+
+ .failure{
+   font-family: sans-serif;
+   color: white;
+   background: rgb(202, 55, 10);
+   height: 15%;
+   width: 40%;
+ }
