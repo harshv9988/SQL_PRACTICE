@@ -1,7 +1,3 @@
-This is the web developer internship test given by Starwisp industries on Sep 3, 2020;
-
-THIS IS SUBMITTED BY SAGAR GARG
-mobile - 9711181457
 I have used HTML CSS JQUERY for frontend , no outside frontend framework. For Backend I have used Nodejs , express js and MySQL database. Name of the DATABASE I have used is starwisp and all the spellings are matched as per given in the images.
 
 ALL the packages are also uplaoded on github (though i suggest to use npm install before start)
